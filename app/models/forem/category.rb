@@ -2,6 +2,7 @@ require 'friendly_id'
 
 module Forem
   class Category < ActiveRecord::Base
+    default_scope order('sort ASC')
     extend FriendlyId
     friendly_id :name, :use => :slugged
 
