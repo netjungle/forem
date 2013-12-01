@@ -8,7 +8,7 @@ module Forem
 
     has_many :forums
     validates :name, :presence => true
-    attr_accessible :name
+    attr_accessible :name, :sort
 
     def to_s
       name
